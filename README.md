@@ -4,6 +4,7 @@
 
 ## Konventionen
 
++ **Nie direkt im Master arbeiten**
 + Schrifttyp: Times New Roman
 + Bibliothek pflegen
 	+ Empfehlung: JabRef
@@ -18,7 +19,7 @@
 ### Michaela
 
 - [ ] Sortieren 50% der Literatur
-- JabRef
+- [ ] JabRef
 	- [ ] installieren
 	- [ ] literature.bib einlesen
 	- [ ] einen Eintrag ergänzen
