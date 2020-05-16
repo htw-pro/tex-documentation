@@ -15,6 +15,7 @@
 
 - [x] Sortieren 50% der Literatur
 - [x] Aufstellen des LaTeX-Skeletts
+- [ ] Entwicklung vorzeitiger ToC
 
 ### Michaela
 
