@@ -5,6 +5,7 @@
 ## Konventionen
 
 + **Nie direkt im Master arbeiten**
++ **1x `git pull (origin master)` bevor man anfängt**
 + Schrifttyp: Times New Roman
 + Bibliothek pflegen
 	+ Empfehlung: JabRef
