@@ -1,0 +1,11 @@
+% Encoding: UTF-8
+
+@Online{2020_latex,
+  author  = {Frank Mittelbach},
+  date    = {2020-05-16},
+  title   = {LaTeX – A document preparation system},
+  url     = {https://www.latex-project.org/},
+  urldate = {2020-05-16},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}

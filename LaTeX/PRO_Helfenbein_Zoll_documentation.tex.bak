@@ -1,0 +1,28 @@
+\input{packages.tex}																		% Präambel
+
+\input{acronym.tex}																			% Abkürzungen
+
+\begin{document}
+
+\input{titlepage.tex}																			% Titelblatt
+
+\newpage
+
+\input{pre_tables.tex}
+
+\input{Ch1.tex}																				% 1. Kapitel
+
+
+\input{Ch2.tex}																				% 2. Kapitel
+
+\input{signatures.tex}																	% Hier kommen die Unterschriten hin
+
+\newpage
+
+\printbibliography
+
+\appendix
+
+\input{appendix.tex}																		% Appendix
+
+\end{document}
