@@ -1,10 +1,15 @@
 %%%%%%%%% Dokumentenklasse
+%\documentclass[
+%	fontsize=12pt,
+%	paper=a4,
+%	oneside,
+%	leqno
+%	]{scrartcl}
+
 \documentclass[
-	fontsize=12pt,
+	conference,
 	paper=a4,
-	oneside,
-	leqno
-	]{scrartcl}
+	]{IEEEtran}
 
 %%%%%%%%% Literatur
 \usepackage[
@@ -16,6 +21,15 @@
 \usepackage[utf8]{inputenc}							% Umlaute
 \usepackage[ngerman]{babel}						% Automatisch erzeugte Texte werden auf Deutsch ausgegeben
 \usepackage{csquotes}
+\usepackage{textcomp}									% Einige Symbole
+
+%%%%%%%%% Mathe
+
+\usepackage{
+	amsmath,														% Mathematische Formartierung
+	amssymb,													% Mathematische Symbole
+	amsfonts,														% Mathematische Schriftarten
+	}
 
 
 %%%%%%%%% Grafiken und Farben
@@ -62,7 +76,7 @@
 
 
 %%%%%%%%% Kopf- und Fußzeile
-\ofoot*{\today}
+%\ofoot*{\today}
 \cfoot{Seite \pagemark}				% Mittleres Foot-Element
 
 %%%%%%%%% Abkürzungsverzeichnis:
