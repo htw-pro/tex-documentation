@@ -25,6 +25,7 @@
 - [ ] Lösung entwickeln, um Bilder per Git zu teilen und trotzdem direkt in LaTeX verwenden zu können
 	- [GitLFS](https://git-lfs.github.com/)
 - [ ] Schrifttyp auf Knuth's Computer Modern ändern
+- [ ] gitignore im Subfolder einfügen
 
 ### Michaela
 
