@@ -26,6 +26,7 @@
 	- [GitLFS](https://git-lfs.github.com/)
 - [ ] Schrifttyp auf Knuth's Computer Modern ändern
 - [ ] gitignore im Subfolder einfügen
+- [ ] Stichpunkte in Issue's umwandeln
 
 ### Michaela
 
