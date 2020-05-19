@@ -7,7 +7,7 @@
 - **Nie direkt im Master arbeiten**
 - [Manuscript Templates for Conference Proceedings (Konferenzpapiere)](https://www.ieee.org/conferences/publishing/templates.html)
 - **Check this** [Template](https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn) für mehr Informationen zu der LaTeX Vorlage
-- Schrifttyp: Times New Roman
+- Schrifttyp: Knuth's Computer Modern
 - Bibliothek pflegen
 	- Empfehlung: JabRef
 - [SIUnitX](https://www.namsu.de/Extra/pakete/Siunitx.html) verwenden für Einheiten
@@ -24,6 +24,7 @@
 	- [ ] Skelett ausgearbeitet
 - [ ] Lösung entwickeln, um Bilder per Git zu teilen und trotzdem direkt in LaTeX verwenden zu können
 	- [GitLFS](https://git-lfs.github.com/)
+- [ ] Schrifttyp auf Knuth's Computer Modern ändern
 
 ### Michaela
 
