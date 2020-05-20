@@ -14,27 +14,7 @@
 
 ## To-Do
 
-### Kilian
-
-- [x] Sortieren 50% der Literatur
-- [x] Aufstellen des LaTeX-Skeletts
-- [x] LaTeX Vorlage auf Konferenzpapier Format anpassen
-- [ ] Entwicklung vorzeitiger ToC
-	- [x] Skelett erstellt
-	- [ ] Skelett ausgearbeitet
-- [ ] Lösung entwickeln, um Bilder per Git zu teilen und trotzdem direkt in LaTeX verwenden zu können
-	- [GitLFS](https://git-lfs.github.com/)
-- [ ] Schrifttyp auf Knuth's Computer Modern ändern
-- [ ] gitignore im Subfolder einfügen
-- [ ] Stichpunkte in Issue's umwandeln
-
-### Michaela
-
-- [ ] Sortieren 50% der Literatur
-- [ ] JabRef
-	- [ ] installieren
-	- [ ] literature.bib einlesen
-	- [ ] einen Eintrag ergänzen
+**s. [Issues](https://github.com/htw-pro/tex-documentation/issues)**
 
 ## ToC v0.0.1
 
