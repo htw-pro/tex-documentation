@@ -1,24 +1,18 @@
-\pagenumbering{Roman}																	% Roman Page Numbers
+%\pagenumbering{Roman}																	% Roman Page Numbers
 
 \begin{spacing}{1}																			% Spacing auf 1 statt 1.5 setzen, damit ToC O.K. aussieht
 	\tableofcontents																				% Inhaltsverzeichnis
 \end{spacing}
-
-\newpage
 
 \addcontentsline{toc}{section}{Abbildungsverzeichnis}						% Abbildungsverzeichnins
 \begin{spacing}{1}
 	\listoffigures
 \end{spacing}
 
-\newpage
-
 \addcontentsline{toc}{section}{Tabellenverzeichnis}							% Tabellenverzeichnis
 \begin{spacing}{1}
 	\listoftables
 \end{spacing}
-
-\newpage
 
 \addcontentsline{toc}{section}{Akronyme}										% Abkürzungsverzeichnis erzeugen
 \begin{spacing}{1}
@@ -27,6 +21,4 @@
 	nonumberlist]																				% Keine Seitenzahl angeben
 \end{spacing}
 
-\newpage
-
-\pagenumbering{arabic}																	% Arabic Page Numbers
+%\pagenumbering{arabic}																	% Arabic Page Numbers

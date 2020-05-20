@@ -39,8 +39,16 @@
 \usepackage{float}										% Floating Bilder, H-Befehl
 \usepackage{mwe} 										% Fuer Abbildungsverzeichnis
 \usepackage[center]{caption} 						% Zentriert Bildunterschriften
-\usepackage[labelfont={color=black,sf,it},
-	font={color=black,footnotesize,it},
+\usepackage[labelfont={
+		color=black,
+		sf,
+		it
+		},
+	font={
+	color=black,
+	footnotesize,
+	it
+	},
 	labelsep=space
 	]{caption}													% customise captions
 \usepackage{subfigure}									%support for the manipulation and reference of small or ‘sub’ figures and tables within a single figure or table environment
@@ -58,7 +66,7 @@
 
 	
 %%%%%%%%% Schritart
-\usepackage{mathptmx}								% Times New Roman
+%\usepackage{mathptmx}								% Times New Roman
 
 
 %%%%%%%%% Tabellenumgebung
@@ -78,6 +86,7 @@
 %%%%%%%%% Kopf- und Fußzeile
 %\ofoot*{\today}
 \cfoot{Seite \pagemark}				% Mittleres Foot-Element
+\ohead{ }										% Obere Seitenzahl disablen
 
 %%%%%%%%% Abkürzungsverzeichnis:
 \usepackage[													% Paket für Glossaries und Acronym-Glossaries
