@@ -16,7 +16,7 @@
 
 **s. [Issues](https://github.com/htw-pro/tex-documentation/issues)**
 
-## ToC v0.0.1
+## ToC v0.0.2
 
 ### Abstract
 
@@ -24,7 +24,13 @@
 
 ### Einleitung / Zielsetzung
 
+#### Bedarfsbegründung
+
 ### State of the Art
+
+#### Rechtliche Rahmenbedingungen vBVH
+
+#### Technischer Stand
 
 ### [Techno-ökonomische Analyse](https://www.ke-next.de/karriere-management/management/neue-methode-identifiziert-oekonomisches-optimum-322.html)
 
