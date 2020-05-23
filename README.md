@@ -28,7 +28,7 @@
 
 ### State of the Art
 
-#### Rechtliche Rahmenbedingungen vBVH
+#### Rechtliche Rahmenbedingungen
 
 #### Technischer Stand
 
