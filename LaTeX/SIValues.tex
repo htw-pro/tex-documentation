@@ -1,0 +1,38 @@
+% Shortcuts for SI Values
+% Grundlagen: https://www.namsu.de/Extra/pakete/Siunitx.html
+% Gute Erklärung der Shortcuts: https://texwelt.de/fragen/2588/wie-schreibe-ich-zahlen-mit-einheiten-richtig
+
+%\DeclareSIUnit{\BeladungsDichte}{\kilo\gram_{\textup{H\textup{2}}\per\kilo\gram_{\textup{FeTi}}}}		% Beladungsdichte
+%\DeclareDocumentCommand\BeladungsDichte{O{}m}{\SI[#1]{#2}{\BeladungsDichte}}
+
+%\DeclareSIUnit[]\NormVolumen
+%{\text{\ensuremath{\cubic\meter_{\textup{i.N.}}}}}
+
+%%%%%%% New SIValues
+
+\DeclareSIUnit{\sieuro}{\mbox{\euro}}
+\DeclareSIUnit\ct{ct}
+\DeclareSIUnit\normvol{\cubic\meter_{i.N.}}
+\DeclareSIUnit\normvolL{\liter_{i.N.}}
+\DeclareSIUnit\kw{\kilo\watt}
+\DeclareSIUnit\kwh{\kilo\watt\hour}
+\DeclareSIUnit\twh{\tera\watt\hour}
+\DeclareSIUnit\kwp{\kilo\watt_{p}}
+\DeclareSIUnit\ctkwh{\ct\per\kwh}
+\DeclareSIUnit\Eurkwh{\sieuro\per\kwh}
+
+%%%%%%% New complete Commands
+
+\NewDocumentCommand\DeclareNewQuantity{mmm}{%
+	\DeclareSIUnit{#2}{#3}%
+	\DeclareDocumentCommand{#1}{O{}m}{\SI[##1]{##2}{#2}}%
+}
+
+\DeclareNewQuantity
+	\Dichte
+	\dichte
+	{\kg\per\cubic\meter}
+\DeclareNewQuantity
+	\Normvolumen
+	\normvolumen
+	{\normvol}

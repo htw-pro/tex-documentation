@@ -1,0 +1,31 @@
+% Bar Chart - EE-Bruttostromerzeugung 2019
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+		ybar,
+		enlargelimits=0.15,											% äüßerste bar plots nicht am Limit der x-Achse
+		legend style={at={(0.5,-0.2)},
+		anchor=north,legend columns=-1},
+		ylabel={Stromerzeugung in \SI{}{\twh}},
+		symbolic x coords={Windenergie,
+			Biomasse,
+			Photovoltaik,
+			Wasserkraft,
+			Geothermie 
+		},
+		xtick=data,
+		nodes near coords,											% Zahlen auf den bar plots
+		nodes near coords align={vertical},
+		x tick label style={rotate=45,anchor=east},
+		]
+		\addplot[black,fill=black!50!white] coordinates {
+			(Windenergie,126.0) (Biomasse,50.4) (Photovoltaik,47.5)
+			(Wasserkraft,20.2) (Geothermie,0.2)
+		};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Verteilung der Bruttostromerzeugung aus erneuerbaren Energien nach Erzeugungsart im Jahr 2019 \parencite{BWE2020}; Eigene Darstellung}
+	\label{fig:ee-gen_total}
+\end{figure}
