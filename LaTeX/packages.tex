@@ -10,6 +10,10 @@
 	conference,
 	paper=a4,
 	]{IEEEtran}
+	
+%%%%%%%%% später löschen
+
+\usepackage{lipsum}
 
 %%%%%%%%% Literatur
 \usepackage[
@@ -23,14 +27,22 @@
 \usepackage{csquotes}
 \usepackage{textcomp}									% Einige Symbole
 
-%%%%%%%%% Mathe
-
+%%%%%%%%% Mathe & Naturwissenschaften
 \usepackage{
 	amsmath,														% Mathematische Formartierung
 	amssymb,													% Mathematische Symbole
 	amsfonts,														% Mathematische Schriftarten
 	}
-
+\usepackage{siunitx}										% Saubere Darestellung von SI Einheiten
+\sisetup{
+%	locale = DE,												% Deutsche Norm, Kommas werden z.B. erkannt
+	per-mode=fraction,										% Output a/b as \frac{a}{b} - in der Einheit
+	quotient-mode=fraction,								% Output a/b as \frac{a}{b} - im Quotienten
+	fraction-function=\tfrac,
+	range-phrase = {\text{~bis~}},
+	sticky-per = true,											% \per bleibt bestehen für mehr als eine Einheit
+	separate-uncertainty									% Standardabweichung
+}
 
 %%%%%%%%% Grafiken und Farben
 \usepackage{graphicx}									% viele grafische Befehle, z.B. \scalebox
@@ -38,22 +50,43 @@
 \usepackage[export]{adjustbox}						% Positionieren von Grafiken, left, right, center
 \usepackage{float}										% Floating Bilder, H-Befehl
 \usepackage{mwe} 										% Fuer Abbildungsverzeichnis
-\usepackage[center]{caption} 						% Zentriert Bildunterschriften
-\usepackage[labelfont={
-		color=black,
-		sf,
-		it
-		},
-	font={
-	color=black,
-	footnotesize,
-	it
-	},
-	labelsep=space
-	]{caption}													% customise captions
+%\usepackage[center]{caption} 						% Zentriert Bildunterschriften
+%\usepackage[labelfont={
+%		color=black,
+%		sf,
+%		%it
+%		},
+%	font={
+%	color=black,
+%	footnotesize,
+%	it
+%	},
+%	labelsep=space
+%	]{caption}													% customise captions
 \usepackage{subfigure}									%support for the manipulation and reference of small or ‘sub’ figures and tables within a single figure or table environment
-\usepackage{fancybox}									% kann Boxen (Rahmen) um Elemente legen
 
+%%%%%%%%% Diagramme
+%\usepackage{tikz,											% Grafik-Paket
+%	stackengine}												% versatile way to stack objects vertically in a variety of customizable ways
+\usepackage{pgfplots}									% Plots
+\pgfplotsset{compat=1.14}								% Soll man wohl machen
+\usetikzlibrary{patterns}									% Patterns anstatt Farben ermöglichen
+
+\usepackage{environ}										% Textwidth von tikzpictures
+\makeatletter
+\newsavebox{\measure@tikzpicture}
+\NewEnviron{scaletikzpicturetowidth}[1]{%
+  \def\tikz@width{#1}%
+  \def\tikzscale{1}\begin{lrbox}{\measure@tikzpicture}%
+  \BODY
+  \end{lrbox}%
+  \pgfmathparse{#1/\wd\measure@tikzpicture}%
+  \edef\tikzscale{\pgfmathresult}%
+  \BODY
+}
+\makeatother
+
+%\input{tikz_macros.tex}
 
 %%%%%%%%% Seitenformatierung
 \usepackage[
@@ -63,9 +96,9 @@
 	]{scrlayer-scrpage}									% Paket zur Manipulation der Kopf- und Fußzeilen
 \renewcommand{\headfont}{}						% Voreingestellte Schriftart bearbeiten, z.B. möglich \itshape für ein feines Kursiv
 \usepackage[onehalfspacing]{setspace}			% Setzt Zeilenabstand auf 1.5
-
+\usepackage{adjustbox}								% Elemente skalieren \scalebox
 	
-%%%%%%%%% Schritart
+%%%%%%%%% Schriftart
 %\usepackage{mathptmx}								% Times New Roman
 
 
@@ -100,3 +133,11 @@
 %\setlength\cftparskip{0pt}
 %\setlength\cftbeforesecskip{0pt}
 %\setlength\cftaftertoctitleskip{1pt}
+
+\newenvironment{conditions}						% New environment - Für saubere Darstellung gegebener Variablen
+	{\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+	{\end{tabular}\par\vspace{\belowdisplayskip}}
+
+\usepackage[
+	hidelinks,														% ohne Boxen um den Link im pdf
+	]{hyperref}													% Links im pdf

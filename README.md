@@ -11,6 +11,7 @@
 - Bibliothek pflegen
 	- Empfehlung: JabRef
 - [SIUnitX](https://www.namsu.de/Extra/pakete/Siunitx.html) verwenden für Einheiten
+- Papers und Daten in die Dropbox
 
 ## To-Do
 
@@ -30,9 +31,17 @@
 
 #### Rechtliche Rahmenbedingungen
 
+#### Aktuelle Marktintegration
+
 #### Technischer Stand
 
 ### [Techno-ökonomische Analyse](https://www.ke-next.de/karriere-management/management/neue-methode-identifiziert-oekonomisches-optimum-322.html)
+
+#### Großanlagen
+
+#### Anlagen mittlerer Größe
+
+#### Kleinanlagen
 
 ### Ökologischen Betrachtung
 
