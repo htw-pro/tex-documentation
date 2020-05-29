@@ -8,7 +8,6 @@
 
 \documentclass[
 	conference,
-	paper=a4,
 	]{IEEEtran}
 	
 %%%%%%%%% später löschen
@@ -120,14 +119,6 @@
 %\ofoot*{\today}
 \cfoot{Seite \pagemark}				% Mittleres Foot-Element
 \ohead{ }										% Obere Seitenzahl disablen
-
-%%%%%%%%% Abkürzungsverzeichnis:
-\usepackage[													% Paket für Glossaries und Acronym-Glossaries
-	acronym,
-	automake,
-	nopostdot
-	]{glossaries}
-
 	
 %\usepackage{tocloft}
 %\setlength\cftparskip{0pt}
@@ -138,6 +129,13 @@
 	{\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
 	{\end{tabular}\par\vspace{\belowdisplayskip}}
 
-\usepackage[
+\usepackage[													% Muss das letzte Paket sein was lädt, außer glossaries
 	hidelinks,														% ohne Boxen um den Link im pdf
 	]{hyperref}													% Links im pdf
+
+%%%%%%%%% Abkürzungsverzeichnis:
+\usepackage[													% Paket für Glossaries und Acronym-Glossaries
+	acronym,														% Muss das letzte Paket sein was lädt
+	automake,
+	nopostdot
+	]{glossaries}
