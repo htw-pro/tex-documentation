@@ -31,7 +31,13 @@
 
 #### Rechtliche Rahmenbedingungen
 
+##### Flexibilitätsprämie
+
 #### Aktuelle Marktintegration
+
+##### Biogas
+
+##### Biomethan
 
 #### Technischer Stand
 

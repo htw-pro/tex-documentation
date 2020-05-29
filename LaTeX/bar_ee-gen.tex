@@ -18,14 +18,14 @@
 		xtick=data,
 		nodes near coords,											% Zahlen auf den bar plots
 		nodes near coords align={vertical},
+%		nodes near coords style={/pgf/number format/.cd,fixed zerofill,precision=1},
 		x tick label style={rotate=45,anchor=east},
 		]
 		\addplot[black,fill=black!50!white] coordinates {
-			(Windenergie,126.0) (Biomasse,50.4) (Photovoltaik,47.5)
-			(Wasserkraft,20.2) (Geothermie,0.2)
+			(Windenergie,126.0) (Biomasse,50.4) (Photovoltaik,47.5) (Wasserkraft,20.2) (Geothermie,0.2)
 		};
 		\end{axis}
 	\end{tikzpicture}
-	\caption{Verteilung der Bruttostromerzeugung aus erneuerbaren Energien nach Erzeugungsart im Jahr 2019 \parencite{BWE2020}; Eigene Darstellung}
+	\caption{Verteilung der Bruttostromerzeugung aus erneuerbaren Energien nach Erzeugungsart im Jahr 2019 \parencite{BWE2020}; \textit{Eigene Darstellung}}
 	\label{fig:ee-gen_total}
 \end{figure}

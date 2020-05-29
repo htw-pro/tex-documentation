@@ -1,6 +1,14 @@
 % Abkürzungen
 % s. documentation https://ctan.org/pkg/glossaries?lang=de
+% \newacronym[
+% plural = {}, -> Hier kann der Plural der Kurzform eigens eingestellt werden
+% longplural = {}, -> Hier kann der Plural der ausgeschriebenen Form eigens eingestellt werden
+% {html} -> label
+% {HTML} -> short form
+% {hypertext markup language} -> long form
 
 \makeglossaries
 
-\newacronym{gcd}{GCD}{Greatest Common Divisor}
+\newacronym[
+	longplural={fluktuierenden erneuerbaren Energien}
+	]{FEE}{fEE}{Fluktuierende erneuerbare Energien}
