@@ -1,6 +1,6 @@
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{center}
-	\scalebox{0.9}{
+	\scalebox{0.95}{
 	\begin{tikzpicture}
 	%%% Bar Plot
 	\begin{axis}[
@@ -13,7 +13,7 @@
 			legend columns=1,
 			draw=none},
 		legend cell align={left},
-		ylabel={Leistung in \si{\mega\watt}},
+		ylabel={Leistung in \si{\giga\watt}},
 		symbolic x coords={
 			2005,
 			2006,
@@ -40,7 +40,7 @@
 		},
 		%x tick label style={rotate=45,anchor=east},
 		ytick={-1000, 0, 1000, 2000, 3000, 4000, 5000, 6000},
-		yticklabels={, 0,, 2000,, 4000,, 6000}
+		yticklabels={, 0,, 2,, 4,, 6}
 		]
 	\addplot+[ybar, draw=black, pattern=north east lines] plot coordinates {(2005,665) (2006,1000) (2007,1226) (2008,1419) (2009,2520) (2010,3015) (2011,3837) (2012,4212) (2013,4317) (2014,4380) (2015,4601) (2016,4780) (2017,5173) (2018,5597) (2019,5901) };
 	\addplot+[ybar, draw=black, fill=black!50!white] plot coordinates {(2005,0) (2006,0) (2007,6) (2008,16) (2009,18) (2010,96) (2011,218) (2012,256) (2013,383) (2014,603) (2015,614) (2016,653) (2017,567) (2018,557) (2019,558) };
@@ -85,7 +85,7 @@
 	\end{axis}
 	\end{tikzpicture}
 	}
-	\caption{Installierte Leistung an Biogas- und Biomethankapazitäten und der Nettozubau von Biomethankapazität \parencite{BWE2020}; Eigene Darstellung}
-	\label{fig:ee-gen_total}
+	\caption{Installierte Leistung an Biogas- und Biomethankapazitäten und der Nettozubau von Biomethankapazität \parencite{BWE2020}; \textit{Eigene Darstellung}}
+	\label{fig:ee-cap_biogas}
 	\end{center}
 \end{figure}
