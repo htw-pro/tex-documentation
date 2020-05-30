@@ -1,0 +1,17 @@
+[0] Config.pm:304> INFO - This is Biber 2.13
+[3] Config.pm:307> INFO - Logfile is 'PRO_Helfenbein_Zoll_documentation.blg'
+[220] biber-MSWIN64:315> INFO - === 
+[316] Biber.pm:375> INFO - Reading 'PRO_Helfenbein_Zoll_documentation.bcf'
+[535] Biber.pm:905> INFO - Found 3 citekeys in bib section 0
+[573] Biber.pm:4196> INFO - Processing section 0
+[582] Utils.pm:75> INFO - Globbing data source 'literature.bib'
+[612] Utils.pm:91> INFO - Globbed data source 'literature.bib' to literature.bib
+[654] Biber.pm:4373> INFO - Looking for bibtex format file 'literature.bib' for section 0
+[669] bibtex.pm:1462> INFO - LaTeX decoding ...
+[692] bibtex.pm:1281> INFO - Found BibTeX data source 'literature.bib'
+[770] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[771] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[771] Biber.pm:4024> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[771] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
+[806] bbl.pm:648> INFO - Writing 'PRO_Helfenbein_Zoll_documentation.bbl' with encoding 'UTF-8'
+[813] bbl.pm:751> INFO - Output to PRO_Helfenbein_Zoll_documentation.bbl
