@@ -1,4 +1,4 @@
-## Core latex/pdflatex auxiliary files:
+##Corelatex/pdflatexauxiliaryfiles:
 *.aux
 *.lof
 *.log
@@ -12,19 +12,19 @@
 *.cb2
 .*.lb
 
-## Intermediate documents:
+##Intermediatedocuments:
 *.dvi
 *.xdv
 *-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+#theserulesmightexcludeimagefilesforfiguresetc.
+#*.ps
+#*.eps
+#*.pdf
 
-## Generated if empty string is given at "Please type another file name for output:"
+##Generatedifemptystringisgivenat"Pleasetypeanotherfilenameforoutput:"
 .pdf
 
-## Bibliography auxiliary files (bibtex/biblatex/biber):
+##Bibliographyauxiliaryfiles(bibtex/biblatex/biber):
 *.bbl
 *.bcf
 *.blg
@@ -32,7 +32,7 @@
 *-blx.bib
 *.run.xml
 
-## Build tool auxiliary files:
+##Buildtoolauxiliaryfiles:
 *.fdb_latexmk
 *.synctex
 *.synctex(busy)
@@ -40,46 +40,46 @@
 *.synctex.gz(busy)
 *.pdfsync
 
-## Build tool directories for auxiliary files
-# latexrun
+##Buildtooldirectoriesforauxiliaryfiles
+#latexrun
 latex.out/
 
-## Auxiliary and intermediate files from other packages:
-# algorithms
+##Auxiliaryandintermediatefilesfromotherpackages:
+#algorithms
 *.alg
 *.loa
 
-# achemso
+#achemso
 acs-*.bib
 
-# amsthm
+#amsthm
 *.thm
 
-# beamer
+#beamer
 *.nav
 *.pre
 *.snm
 *.vrb
 
-# changes
+#changes
 *.soc
 
-# comment
+#comment
 *.cut
 
-# cprotect
+#cprotect
 *.cpt
 
-# elsarticle (documentclass of Elsevier journals)
+#elsarticle(documentclassofElsevierjournals)
 *.spl
 
-# endnotes
+#endnotes
 *.ent
 
-# fixme
+#fixme
 *.lox
 
-# feynmf/feynmp
+#feynmf/feynmp
 *.mf
 *.mp
 *.t[1-9]
@@ -102,7 +102,7 @@ acs-*.bib
 *.eledsec[1-9][0-9][0-9]
 *.eledsec[1-9][0-9][0-9]R
 
-# glossaries
+#glossaries
 *.acn
 *.acr
 *.glg
@@ -112,17 +112,17 @@ acs-*.bib
 *.lzo
 *.lzs
 
-# uncomment this for glossaries-extra (will ignore makeindex's style files!)
-# *.ist
+#uncommentthisforglossaries-extra(willignoremakeindex'sstylefiles!)
+#*.ist
 
-# gnuplottex
+#gnuplottex
 *-gnuplottex-*
 
-# gregoriotex
+#gregoriotex
 *.gaux
 *.gtex
 
-# htlatex
+#htlatex
 *.4ct
 *.4tc
 *.idv
@@ -130,27 +130,27 @@ acs-*.bib
 *.trc
 *.xref
 
-# hyperref
+#hyperref
 *.brf
 
-# knitr
+#knitr
 *-concordance.tex
-# TODO Uncomment the next line if you use knitr and want to ignore its generated tikz files
-# *.tikz
+#TODOUncommentthenextlineifyouuseknitrandwanttoignoreitsgeneratedtikzfiles
+#*.tikz
 *-tikzDictionary
 
-# listings
+#listings
 *.lol
 
-# luatexja-ruby
+#luatexja-ruby
 *.ltjruby
 
-# makeidx
+#makeidx
 *.idx
 *.ilg
 *.ind
 
-# minitoc
+#minitoc
 *.maf
 *.mlf
 *.mlt
@@ -159,126 +159,126 @@ acs-*.bib
 *.slt[0-9]*
 *.stc[0-9]*
 
-# minted
+#minted
 _minted*
 *.pyg
 
-# morewrites
+#morewrites
 *.mw
 
-# nomencl
+#nomencl
 *.nlg
 *.nlo
 *.nls
 
-# pax
+#pax
 *.pax
 
-# pdfpcnotes
+#pdfpcnotes
 *.pdfpc
 
-# sagetex
+#sagetex
 *.sagetex.sage
 *.sagetex.py
 *.sagetex.scmd
 
-# scrwfile
+#scrwfile
 *.wrt
 
-# sympy
+#sympy
 *.sout
 *.sympy
 sympy-plots-for-*.tex/
 
-# pdfcomment
+#pdfcomment
 *.upa
 *.upb
 
-# pythontex
+#pythontex
 *.pytxcode
 pythontex-files-*/
 
-# tcolorbox
+#tcolorbox
 *.listing
 
-# thmtools
+#thmtools
 *.loe
 
-# TikZ & PGF
+#TikZ&PGF
 *.dpth
 *.md5
 *.auxlock
 
-# todonotes
+#todonotes
 *.tdo
 
-# vhistory
+#vhistory
 *.hst
 *.ver
 
-# easy-todo
+#easy-todo
 *.lod
 
-# xcolor
+#xcolor
 *.xcp
 
-# xmpincl
+#xmpincl
 *.xmpi
 
-# xindy
+#xindy
 *.xdy
 
-# xypic precompiled matrices and outlines
+#xypicprecompiledmatricesandoutlines
 *.xyc
 *.xyd
 
-# endfloat
+#endfloat
 *.ttt
 *.fff
 
-# Latexian
+#Latexian
 TSWLatexianTemp*
 
-## Editors:
-# WinEdt
+##Editors:
+#WinEdt
 *.bak
 *.sav
 
-# Texpad
+#Texpad
 .texpadtmp
 
-# LyX
+#LyX
 *.lyx~
 
-# Kile
+#Kile
 *.backup
 
-# gummi
+#gummi
 .*.swp
 
-# KBibTeX
+#KBibTeX
 *~[0-9]*
 
-# TeXnicCenter
+#TeXnicCenter
 *.tps
 
-# auto folder when using emacs and auctex
+#autofolderwhenusingemacsandauctex
 ./auto/*
 *.el
 
-# expex forward references with \gathertags
+#expexforwardreferenceswith\gathertags
 *-tags.tex
 
-# standalone packages
+#standalonepackages
 *.sta
 
-# Makeindex log files
+#Makeindexlogfiles
 *.lpz
 
-# xwatermark package
+#xwatermarkpackage
 *.xwm
 
-# REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
-# option is specified. Footnotes are the stored in a file with suffix Notes.bib.
-# Uncomment the next line to have this generated file ignored.
+#REVTeXputsfootnotesinthebibliographybydefault,unlessthenofootinbib
+#optionisspecified.FootnotesarethestoredinafilewithsuffixNotes.bib.
+#Uncommentthenextlinetohavethisgeneratedfileignored.
 #*Notes.bib
