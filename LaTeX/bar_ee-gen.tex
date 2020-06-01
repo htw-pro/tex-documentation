@@ -6,11 +6,9 @@
 		\begin{axis}[
 		ybar,
 		enlargelimits=0.15,											% äüßerste bar plots nicht am Limit der x-Achse
-		legend style={at={(0.5,-0.2)},
-		anchor=north,legend columns=-1},
 		ylabel={Stromerzeugung in \SI{}{\twh}},
 		symbolic x coords={Windenergie,
-			Biomasse,
+			Bioenergie,
 			Photovoltaik,
 			Wasserkraft,
 			Geothermie 
@@ -18,11 +16,11 @@
 		xtick=data,
 		nodes near coords,											% Zahlen auf den bar plots
 		nodes near coords align={vertical},
-%		nodes near coords style={/pgf/number format/.cd,fixed zerofill,precision=1},
+		nodes near coords style={/pgf/number format/.cd,fixed,fixed zerofill,precision=1},
 		x tick label style={rotate=45,anchor=east},
 		]
 		\addplot[black,fill=black!50!white] coordinates {
-			(Windenergie,126.0) (Biomasse,50.4) (Photovoltaik,47.5) (Wasserkraft,20.2) (Geothermie,0.2)
+			(Windenergie,126.0) (Bioenergie,50.4) (Photovoltaik,47.5) (Wasserkraft,20.2) (Geothermie,0.2)
 		};
 		\end{axis}
 	\end{tikzpicture}
