@@ -10,9 +10,12 @@
 	conference,
 	]{IEEEtran}
 	
-%%%%%%%%% später löschen
+%%%%%%%%% Formatierung
 
-\usepackage{lipsum}
+\makeatletter
+\usepackage{microtype}									% Verbesserte Formatierung; Sollte immer geladen werden
+\g@addto@macro\@verbatim{\microtypesetup{activate=false}}
+\makeatother
 
 %%%%%%%%% Literatur
 \usepackage[
@@ -91,10 +94,13 @@
 \usepackage[
 	headsepline,												% Vertikale Linie unterm Header
 	plainheadsepline,
-	automark													% Section im Header
+	automark,													% Section im Header
+	singlespacing=true,
 	]{scrlayer-scrpage}									% Paket zur Manipulation der Kopf- und Fußzeilen
 \renewcommand{\headfont}{}						% Voreingestellte Schriftart bearbeiten, z.B. möglich \itshape für ein feines Kursiv
-\usepackage[onehalfspacing]{setspace}			% Setzt Zeilenabstand auf 1.5
+\usepackage[
+	onehalfspacing,
+	]{setspace}												% Setzt Zeilenabstand auf 1.5
 \usepackage{adjustbox}								% Elemente skalieren \scalebox
 	
 %%%%%%%%% Schriftart
