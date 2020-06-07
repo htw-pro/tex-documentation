@@ -26,8 +26,10 @@
 \usepackage[T1]{fontenc}								% Textzeichen für westeuropäische Sprachen
 \usepackage[utf8]{inputenc}							% Umlaute
 \usepackage[ngerman]{babel}						% Automatisch erzeugte Texte werden auf Deutsch ausgegeben
+\usepackage[ngerman]{datetime2}						% Datumsformate
 \usepackage{csquotes}
 \usepackage{textcomp}									% Einige Symbole
+\usepackage[official]{eurosym}							% €-Symbol
 
 %%%%%%%%% Mathe & Naturwissenschaften
 \usepackage{
@@ -135,6 +137,11 @@
 	{\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
 	{\end{tabular}\par\vspace{\belowdisplayskip}}
 
+% Roman Numbers in Text
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
 \usepackage[													% Muss das letzte Paket sein was lädt, außer glossaries
 %	hidelinks,														% ohne Boxen um den Link im pdf
 	]{hyperref}													% Links im pdf
@@ -150,5 +157,7 @@
 \usepackage[													% Paket für Glossaries und Acronym-Glossaries
 	acronym,														% Muss das letzte Paket sein was lädt
 	automake,
-	nopostdot
+	nopostdot,
+	toc,
+	nomain,
 	]{glossaries}
