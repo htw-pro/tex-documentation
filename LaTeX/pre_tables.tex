@@ -14,15 +14,14 @@
 	\listoftables
 \end{spacing}
 
-\addcontentsline{toc}{section}{Akronyme}										% Abkürzungsverzeichnis erzeugen
-\begin{spacing}{1}
+\begin{spacing}{1}															% Abkürzungsverzeichnis
 	\printglossary[
 	type=\acronymtype,
 	nonumberlist,
-	style=long,
+	style=super,
 	]																				% Keine Seitenzahl angeben
 \end{spacing}
 
-\pagenumbering{arabic}																	% Arabic Page Numbers
 \microtypesetup{protrusion=true}
+\pagenumbering{arabic}																	% Arabic Page Numbers
 \newpage
