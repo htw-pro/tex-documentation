@@ -3,7 +3,48 @@
 In diesem Kapitel wird auf den aktuellen Stand der Technik und der Marktintegration von Biogas und Biomethan eingegangen. Zusätzlich wird der rechtliche Rahmen erläutert und Hemmnisse aufgezeigt, die den Prozess hin zu einer Flexibilisierung von Biogasanlagen erschweren.
 
 
-\subsection{Stand der Technik}
+\subsection{Stand der Technik}\label{chap:stateofart}
+Das unverarbeitete Rohbiogas ist ein Gasgemisch. Seine Hauptbestandteile sind Methan mit \SIrange{50}{75}{\percent}, Kohlenstoffdioxid mit \SIrange{20}{50}{\percent} und Wasserdampf mit \SIrange{1}{5}{\percent}. Weitere mögliche Bestandteile sind Schwefelwasserstoff, Ammoniak, Stickstoff und Siloxane. Die genaue Zusammensetzung des Biogas ist in erster Linie abhängig von der zur Produktion verwendeten Biomasse \parencite{Rasi09}. Sie bestimmt damit außerdem welche Gasreingungs- und Aufbereitungsverfahren durchgeführt werden müssen, damit es als Biomethan in das deutsche Erdgasnetz eingespeist werden darf. Dabei ist das Hauptziel den Methananteil, und damit den Heizwert, zu erhöhen und die übrigens Bestandteile soweit wie möglich zu reduzieren. Die wichtigsten Anforderungen, gestellt durch den \glspl{DVGW}, sind in \ref{tab:tab_gasgrid_spec} zusammengefasst. Die geringen Anteile von Siloxanen und Ammoniak im Biogas werden oft durch andere Gasreinigungsverfahren entfernt, sodass eine separate Gasreinigung meist nicht nötig ist. \parencite{FNR14}\parencite{KoBi16}
+\input{table_gasgrid-specifications.tex}
+
+% Anzahl Anlagen in Deutschland und wie sie vorgehen
+
+% Schema zeichnen?
+
+Im Folgenden werden Gasaufbereitungsverfahren vorgestellt, deren primärer Zweck es ist Kohlenstoffdioxid aus dem Biogas zu entfernen und damit seinen Brennwert zu erhöhen.
+\smallskip
+
+
+\subsubsection{Absorptionsverfahren}\label{chap:absorp}
+
+{\textbf Kurzer Einleitungssatz noch -} Bei physikalischer Absorption werden unerwünschte Bestandteile eines Gasstroms in einem Flüssigkeitsstrom gelöst. Der Konzentrationsunterschied des gelösten Gases im Lösungsmittel und der Gasphase ist dabei die treibende Kraft für den Stoffübergang. Wenn die abgeschiedenen Gasbestandteile dabei mit dem Lösungsmittel reagieren, spricht man von chemischer Absorption. \parencite{Rasi09} \newline
+Das weltweit verbreitetste Verfahren ist die \gls{DWW} mit einem Anteil von \SI{41}{\percent}. Sie basiert auf der physikalischen Absorption von Gasen Wasser. Das Verfahren nutzt dabei aus, dass die Löslichkeit von Methan bei \SI{25}{\degreeCelsius} \SI{26}{\relax} mal schlechter als von Kohlenstoffdioxid. Das Rohbiogas wird unter hohem Druck von \SIrange{8}{10}{\bar} in die flüssige Phase des Absorbers geleitet, wo \ce{CO2} absorbiert wird. Das Lösungsmittel wird anschließend mit Luft in einen Desorber geleitet, wo sich das \ce{CO2} vom Wasser löst. Das Wasser wird anschließend wieder dem Absorber zugeführt. Das Schwachgas, das kleine Mengen von \ce{CH4} enthält muss nachbehandelt werden bevor es in die Atmosphäre geleitet wird.
+Die Löslichkeit von Schwefelwasserstoff \ce{H2S} in Wasser ist sogar noch besser, sodass diese Bestandteile ebenfalls aus dem Biogas entfernt werden können. Da \ce{H2S} allerdings umweltschädlich und deshalb nicht in die Atmosphäre geleitet wird, sollte das Biogas vor der \gls{DWW} entschwefelt werden. Wird das beachtet ist der Prozess einer der einfachsten Wege Biogas umweltfreundlich und kostengünstig aufzuwerten. \parencite{KGKK2019} \parencite{BHPT13} \newline
+Neben der \gls{DWW} werden auch ähnliche Waschverfahren mit organischen Lösungsmitteln verwendet. Wie bei der \gls{DWW} gibt es eine Absorptionsstufe bei erhöhtem Druck und eine Regenerationsstufe. Die Polyethylenglykol-Dimethylether Waschmittel, bekannt unter den Handelsnamen Genosorb \textsuperscript{\textregistered} oder Selexol \textsuperscript{\textregistered}, weisen eine deutlich höhere \ce{CO2}-Löslichkeit als Wasser auf. So sind kleinere Waschmittelmengen und Absorberabmessungen möglich. Allerdings ist der Regenerationsaufwand der organischen Mittel höher, da sie neben entspannt auch erhitzt werden müssen. In der Regel genügt die Wärmezufuhr aus der Schwachgasbehandlung, sodass kein zusätzliche Energieaufwand nötig ist. \ce{H2S} Absorption ist auch hier technisch möglich, aber nicht sinnvoll wegen derselben Gründe. \parencite{FNR14} \newline
+Die Aminwäsche funktioniert nach dem Prinzip der chemischen Absorption. Saure Gasbestandteile im Biogas, \ce{CO2} und potenziell \ce{H2S}, reagieren im Absorber exotherm reversibel mit einer Lösung aus Wasser und Aminen und werden somit chemisch gebunden. Damit die Reaktion nicht in einen Gleichgewichtszustand gerät, besteht ein deutlicher Überfluss an Aminlösung. Die Absorption findet bei einem Druck von \SIrange{1}{2}{\bar} statt und das meist verwendete Amin ist Methyldiethanolamin (MDEA). Die Regeneration des Lösungsmittels findet in einer Stripkolonne statt. Dazu wird es auf \SIrange{120}{160}{\degreeCelsius} aufgeheizt, um die nötige Reaktionswärme aufzubringen. Das gelöste \ce{CO2} wird in einem Kondensator abgekühlt und in die Atmosphäre geleitet. Wie auch bei den anderen Wäscheverfahren würde die Absorption von \ce{H2S} sich negativ auf die Effizienz des Prozesses und auf die Umwelt auswirken. \parencite{BHPT13} \parencite{KGKK2019}
+
+
+\subsubsection{Membranverfahren}\label{chap:membrane} 
+
+Biogasaufbereitung mithilfe von Membranverfahren nutzen die unterschiedlichen Permeabilitäten von Gasanteilen mithilfe einer semi-permeabelen Membran. Je nach Molekülgröße können manche Bestandteile auf die andere Seite diffundieren. Für Biogasaufbereitung werden Membranen verwendet, die \ce{CO2}, \ce{H2O}, \ce{O2} und \ce{H2S} durchdringen lassen, während \ce{CH4} und \ce{N2} übrig bleiben. Üblich sind drei verschiedene Arten von Membranen, polymerische, anorganische und Mixed-Matrix-Membranen (MMM), die jeweils ihre Vor- und Nachteile besitzen. Die Gas/Gas-Diffusion findet unter hohen Drücken von meist \SIrange{20}{40}{\bar} statt, sodass neben den gewünschten Gasen auch Spuren von \ce{CH4} in das Permeat gelangen. Um dem entgegen zu wirken, werden mehrstufige Prozesse genutzt, um den \ce{CH4}-Anteil zu erhöhen und die Verluste zu verringern. Außerdem werden nun auch Verfahren entwickelt, die das Membranverfahren mit einer Absorption verbinden. Auf einer Seite der Membran befindet sich ein Lösungsmittel, das gasförmiges \ce{CO2} und \ce{H2S}, das von der anderen Seite diffundiert, absorbiert. Das Biogas hat dabei einen leicht erhöhten Druck, damit die Flüssigkeit nicht in die Gasphase gerät. Membranverfahren bieten die Möglichkeit preiswert hohe \ce{CH4}-Konzentrationen zu erreichen. Hier ist allerdings auch dringend zu raten das Biogas vorher zu reinigen, damit die Membran nicht verstopft oder beschädigt wird     \parencite{KGKK2019}
+
+
+\subsubsection{Druckwechseladsorption}\label{chap:PSA}
+
+
+\subsubsection{Kryogene Verfahren}\label{chap:kryo}
+
+
+
+\subsubsection{Hybridverfahren}\label{chap:hybrid} 
+
+
+\subsubsection{Bioelektrochemische Methanisierung}\label{chap:bioelectr}
+
+
+\subsubsection{Biochemische Methanisierung}\label{chap:biochem} 
+
+
 
 
 % ToDo: Je nach eingesetzten Material produzieren die Bakterien Biogas mit einem Methangehalt von 50 bis 75 % https://www.umweltbundesamt.de/themen/wirtschaft-konsum/industriebranchen/biogasanlagen#einfuhrung
