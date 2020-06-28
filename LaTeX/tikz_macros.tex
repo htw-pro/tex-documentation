@@ -1,3 +1,8 @@
+\usetikzlibrary{arrows,
+	patterns,											% Patterns anstatt Farben ermöglichen
+	positioning,
+	}
+
 \definecolor{rosso}{RGB}{220,57,18}
 \definecolor{giallo}{RGB}{255,153,0}
 \definecolor{blu}{RGB}{102,140,217}
@@ -75,4 +80,29 @@
             }
     ;
     \end{scope}
+}
+
+\tikzset{
+    %Define standard arrow tip
+    >=stealth',
+    %Define style for boxes
+    punkt/.style={
+		rectangle,
+		rounded corners,
+		draw=black, very thick,
+		text width=6.5em,
+		minimum height=2em,
+		text centered},
+	kreis/.style={
+		circle,
+		draw=black, very thick,
+		text width=2.0em,
+		minimum height=0.5em,
+		text centered},
+    % Define arrow style
+    pil/.style={
+           ->,
+           thick,
+           shorten <=2pt,
+           shorten >=2pt,}
 }
