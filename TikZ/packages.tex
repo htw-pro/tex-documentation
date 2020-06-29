@@ -1,0 +1,44 @@
+%%%%%%%%% Dokumentenklasse
+\documentclass[
+	crop,
+	tikz,
+	]{standalone}
+
+\usepackage{siunitx}										% Saubere Darestellung von SI Einheiten
+\sisetup{
+%	locale = DE,												% Deutsche Norm, Kommas werden z.B. erkannt
+	per-mode=fraction,										% Output a/b as \frac{a}{b} - in der Einheit
+	quotient-mode=fraction,								% Output a/b as \frac{a}{b} - im Quotienten
+	fraction-function=\tfrac,
+	range-phrase = {\text{~bis~}},
+	sticky-per = true,											% \per bleibt bestehen für mehr als eine Einheit
+	separate-uncertainty									% Standardabweichung
+}
+
+\usepackage[
+	version=4,
+	]{mhchem}										% chemische Gleichungen/Summenformeln
+
+%%%%%%%%% Grafiken und Farben
+\usepackage{graphicx}									% viele grafische Befehle, z.B. \scalebox
+\usepackage{xcolor, colortbl}							% Farben und Farbpaletten
+\usepackage[export]{adjustbox}						% Positionieren von Grafiken, left, right, center
+\usepackage{float}										% Floating Bilder, H-Befehl
+\usepackage{mwe} 										% Fuer Abbildungsverzeichnis
+\usepackage{graphics}										% accommodate all needs for inclusion of graphics
+\usepackage{subfigure}									%support for the manipulation and reference of small or ‘sub’ figures and tables within a single figure or table environment
+
+%%%%%%%%% Diagramme
+\usepackage{tikz,											% Grafik-Paket
+	stackengine}												% versatile way to stack objects vertically in a variety of customizable ways
+\usepackage{pgfplots}									% Plots
+\pgfplotsset{compat=1.14}								% Soll man wohl machen
+
+
+%%%%%%%%% Seitenformatierung
+\usepackage{adjustbox}								% Elemente skalieren \scalebox
+	
+%%%%%%%%% Schriftart
+\usepackage{mathptmx}								% Times New Roman
+
+\input{tikz_macros.tex}
