@@ -19,10 +19,19 @@
 		nodes near coords,											% Zahlen auf den bar plots
 		nodes near coords align={vertical},
 		nodes near coords style={/pgf/number format/.cd,fixed,fixed zerofill,precision=0},
-		x tick label style={rotate=45,anchor=east},
+		xticklabels={
+			DWW,
+			Aminwäsche,
+			PSA,
+			org. Wäsche,
+			Membrantrenn.,
+			Membran- und\\Kryogentrenn.,
+			k.A.,
+			},
+		x tick label style={rotate=45,anchor=east,align=right,font=\footnotesize},
 		]
 		\addplot[black,fill=black!50!white] coordinates {
-			(DWW,65) (Aminwäsche,55) (PSA,37) (org. Wäsche,17) (Membrantrenn.,16) (Membran- und  Kryogentrenn.,1) (k.A.,5)
+			(DWW,56) (Aminwäsche,55) (PSA,37) (org. Wäsche,17) (Membrantrenn.,16) (Membran- und  Kryogentrenn.,1) (k.A.,5)
 		};
 		\end{axis}
 	\end{tikzpicture}

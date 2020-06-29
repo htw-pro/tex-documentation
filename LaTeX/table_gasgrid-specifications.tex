@@ -1,30 +1,21 @@
 {
-\renewcommand{\arraystretch}{1.1}
-\begin{table}[H]
+\renewcommand{\arraystretch}{1.2}
+\begin{table*}[ht]
 	\begin{center}
 		\caption{Anforderungen an Gas aus regenerativen Quellen \parencite{FNR14}\parencite{KoBi16}}
-		\begin{tabu} to 0.5\textwidth {| X[0.6] | X | X[1.2] |}
-\hline
-			Komponente  &	zul. Anteil  & Wirkung					\\		
-\hline
-			\multirow{2}{*}{\ce{CH4}} &	L-Gasnetze: \SI{\geq 90}{\Molpercent}  &	brennbare Gaskomponente	\\
-					 &	H-Gasnetze: \SI{\geq 95}{\Molpercent}	&	{}							\\ 
-\hline
-
-			\multirow{2}{*}{\ce{CO2}}  	&	L-Gasnetze: \SI{\leq 10}{\Molpercent}  &	vermindert Brennwert	\\
-						&	H-Gasnetze: \SI{\leq 5}{\Molpercent}	 &	{}						\\ 
-
-\hline
-			\multirow{2}{*}{\ce{H}}     	&	bis Netzdruck \SI{10}{\bar}: \SI{\leq 200}{\mgcubm}	&	Korrosion; Kondensat beschädigt Instrumente und Aggregate	\\
-						&	Netzdruck größer \SI{10}{\bar}: \SI{\leq 50}{\mgcubm}	& {}	\\ 
-\hline
-			\multirow{1}{*}{\ce{H2S}}  	&	\SI{\leq 5}{\mgcubm}  	&	Korrosion			\\
-\hline
-			\multirow{1}{*}{\ce{NH3}}  	&	k.A.  	&	verringert Zündverhalten			\\
-\hline
-			
+		\begin{tabu} to \textwidth {X X X X[r] X[3.0]}
+			\hline
+			Komponente           		& \multicolumn{2}{l}{Spezifikation} 		& zul. Anteil & Wirkung                                                                      	\\	\hline
+			\multirow[t]{2}{*}{\ce{CH4}} 	& \multirow[t]{4}{*}{Gasnetztyp} & L             & \SI{\geq 90}{\Molpercent}          & \multirow[t]{2}{*}{brennbare Gaskomponente}                                     	\\
+										&                             & H             & \SI{\geq 95}{\Molpercent}          &                                                                              	\\
+			\multirow[t]{2}{*}{\ce{CO2}} 	& 						  & L             & \SI{\leq 10}{\Molpercent}          & \multirow[t]{2}{*}{vermindert Brennwert}                                        	\\
+										&                             & H             & \SI{\leq 5}{\Molpercent}           &                                                                              	\\
+			\multirow[t]{2}{*}{\ce{H}}   	& \multirow[t]{2}{*}{Netzdruck}  & \SI{\leq 10}{\bar}            & \SI[per-mode=symbol]{\leq 200}{\mgcubm}         & \multirow{2}{*}{\begin{minipage}{7cm}Korrosion; Kondensat beschädigt Instrumente und Aggregate\end{minipage}} 	\\
+										&                             & \SI{> 10}{\bar}            & \SI[per-mode=symbol]{\leq 50}{\mgcubm}          &                                                                              	\\
+			\ce{H2S}                  	& {--}                           & {--}             & \SI[per-mode=symbol]{\leq 5}{\mgcubm}           & Korrosion                                                                    	\\
+			\ce{NH3}  	                & {--}                           & {--}             & {--}           & verringert Zündverhalten														\\	\hline
 		\end{tabu}
 		\label{tab:tab_gasgrid_spec}
 	\end{center}
-\end{table}
+\end{table*}
 }
