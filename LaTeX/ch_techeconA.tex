@@ -2,10 +2,93 @@
 
 \section{Techno-ökonomische Analyse}
 
-\ref{tab:tab_TechComp}
+Im nachfolgenden Abschnitt werden Verfahren zur Methanaufbereitung näher untersucht. Am Ende soll ermittelt werden, wie hoch der Preis für eine \si{\kwh}/\si{\normvol} Methan ist, und eine Abschätzung zur Wirtschaftlichkeit dieses Flexibilisierungspfad gegeben werden. \newline
+
+\subsection{Analyse der konventionellen Aufbereitungsverfahren}
+Zunächst werden die konventionellen Aufbereitungsverfahren untersucht. \smallskip
+
+% DWW:
+Die Druckwasserwäsche ist derzeit das am meisten genutzte Biogasaufbereitungsverfahren. Sie ist einer der einfachsten Wege Biogas umweltfreundlich und kostengünstig aufzuwerten. Da das Waschmittel Wasser ist werden keine teuren Chemikalien benötigt. Das Produktgas hat eine \ce{CH4} Reinheit von \SIrange{95}{99}{\percent} \ref{tab:tab_TechComp}. Der Hauptvorteile dieser Technologie ist, dass sie weit verbreitet und damit ausgereift ist, das Anlagendesign recht einfach ist und sie sehr günstig ist. Der \ce{CH4}-Schlupf ist mit ungefähr \SI{2}{\percent} auch akzeptabel. In Ausnahmefällen ist ein Schlupf von \SIrange{8}{10}{\percent} aufgetreten, was auf ein schlecht optimiertes System zurückzuführen ist. Ein Nachteil ist, dass die Energieeffizienz, verglichen mit anderen Prozessen, mit \SI{0,3}{\kwh\per\normvol} recht gering ist. Je nach Quelle ist die \gls{DWW} auch schon ab \SI{0,2}{\kwh\per\normvol} möglich \parencite{Coll17} \parencite{Emp18}. Zudem sollte das Rohbiogas vor der Behandlung entschwefelt werden, da \ce{H2S} die \ce{CO2}-Absorption negativ beeinflusst und nicht mit dem Schwachgas in die Atmosphäre geleitet werden sollte. Da die Gasaufbereitung als Teil von Biogasbestandsanlagen betrachtet wird, wird ohnehin von einer bestehenden Gasreinigung ausgegangen. Die Investitionskosten betragen, je nach Größe der Anlage, \SIrange{2500}{5500}{\sieuro\per\normvolh} für \SIrange{100}{500}{\normvol\per\hour} und \SIrange{1800}{2000}{\sieuro\per\normvolh} für Anlagen größer als \SI{1000}{\normvolh}. Der Energieaufwand liegt bei \SIrange{0,2}{0,3}{\kwh\per\normvol}, wovon die Gasverdichtung den größten Anteil ausmacht. Letztendlich liegen die Kosten für das produzierte Biomethan zwischen \SIrange{0,13}{0,16}{\sieuro\per\normvol} \parencite{Emp18}. Wegen der niedrigen Kosten für die Gasaufbereitung ist die \gls{DWW} eine vielversprechende Technologie für die Methaneinspeisung von Biogasanlagen. Zudem ist sie durch den starken Fall der Investitionskosten auch für kleinere Biogasanlagen geeignet. \parencite{KGKK2019} \parencite{Struk20}\newline
+
+%Polyglykolwäsche: 
+Im Vergleich zur \gls{DWW} wird deutlich weniger Waschmittel benötigt, da die Löslichkeit von \ce{CO2} in den verwendeten organischen Lösungsmitteln deutlich höher ist. Deshalb ist es möglich kleinere Anlagen zu bauen. Allerdings ist der Regenerationsaufwand der organischen Mittel höher, da sie sowohl entspannt als auch erhitzt werden müssen. Der Strombedarf liegt bei \SIrange{0,24}{0,33}{\kwh\per\normvol} Biogas. Je nach Quelle wird außerdem entweder eine Wärmezufuhr von \SIrange{0,1}{0,15}{\kwh\per\normvol} Biogas oder die Schwachgasbehandlung als einzige Wärmequelle genannt \parencite{Emp18}. Durch organische Wäsche wird ein Methangehalt von \SIrange{96}{98}{\percent} erreicht. Dabei liegen die Methanverluste in der Regel unter \SI{2}{\percent}. Auch hier sind die Investitionskosten stark abhängig von der Anlagengröße. Bei einem Rohgasstrom von weniger als \SI{500}{\normvolh} liegen die Kosten bei \SIrange{3000}{4500}{\sieuro\per\normvolh}. Bei einer Anlage größer \SI{1000}{\normvolh} liegen die Kosten nur noch bei etwa \SI{2000}{\sieuro\per\normvolh}
+% Kosten Aufbereitung
+Das organische Lösemittel Polyethylenglykol wird als wassergefährdend eingestuft. Nach umweltfreundlichen Alternativen wird daher bereits gesucht. Derzeit werden dahingehend stark eutektischen Lösungsmitteln (DES) untersucht, die ähnliche Eigenschaften und Ergebnisse liefern sollen wie Selexol \textsuperscript{\textregistered}. Bis sie in der Praxis eingesetzt werden können bedarf es allerdings noch längerer Forschung. \parencite{FNR14} {Struk20} \newline
+
+%Aminwäsche: 
+Es wird eine Methanreinheit von über \SI{98}{\percent} erreicht \parencite{\parencite{KGKK2019}}. Der Methanschlupf ist mit \SI{0,06}{\percent} sehr gering. Der Gesamtenergieaufwand liegt bei etwa \SIrange{62}{69}{\kwh\per\normvol}. Davon werden \SI{0,55}{\kwh\per\normvol} in Form von Wärme zur Regeneration des Waschmittels benötigt. Die Investitionskosten liegen bei kleinen Anlagen mit einer Rohgaskapazität von \SI{500}{\normvolh} bei etwa \SI{3000}{\sieuro\per\normvolh}. Für große Anlagen mit einer Kapazität von \SI{1800}{\normvol\per\hour} liegen die Investitionskosten nur noch bei \SI{1500}{\sieuro\per\normvolh}. Der Preis für das Biomethan ist recht hoch und wird, je nach Quelle, zwischen \SIrange{17}{35}{\sieuro\per\normvol} angegeben \parencite{Coll17} \parencite{Emp18}. Zu beachten ist auch, dass das Abgas mit \SI{99,99}{\percent} eine sehr hohe \ce{CO2} Reinheit besitzt, sodass es geeignet dafür ist als Rohstoff verkauft zu werden \parencite{DSW13}. \parencite{BHPT13} \newline
+
+%Membran:
+Membrantrennverfahren sind modular aufgebaut und deswegen skalierbar und stets einfach anzupassen an individuelle Anforderungen an die Anlage. Beispielsweise ist es möglich verschiedene Membranen zu kombinieren, sodass auch andere Gasanteile außer \ce{CO2} entfernt werden können. Um eine Methanreinheit von \SI{95}{\percent} zu erreichen wird ein mindestens zweistufiger Prozess benötigt. Die aufzuwendende Energie ist mit \SI{0,20}{\kwh\per\normvol} Rohbiogas recht niedrig. Allerdings liegt der \ce{CH4}-Gehalt im Abgas hier immer noch bei etwa \SI{7,2}{\percent}, sodass zusätzliche Stufen zu empfehlen sind, um die Verluste zu verringern. Nach vier Stufen etwa liegt der Anteil im Abgas nur noch bei \SI{0,8}{\percent} und es wird ein Methananteil von \SI{99,5}{\percent} erreicht. Die Kosten für die Aufbereitung liegen dann bei ca. \SI{0,15}{\sieuro\per\normvol} Biomethan \parencite{Miltner2016}. Weitere Quellen nennen allerdings Preise von bis zu \SI{0,27}{\sieuro\per\normvol} \parencite{Emp18}. Die Membranverfahren sind kommerziell verfügbar, allerdings sind die Investitionskosten stark abhängig von der geplanten Größe der Anlage. Kleine Anlagen, unter \SI{200}{\normvolh}, kosten \SIrange{2500}{6000}{\sieuro\per\normvolh} \parencite{BHPT13}. Dagegen müssen ab einer Größe von \SI{1000}{\normvolh} nur noch ca. \SI{2000}{\sieuro\per\normvolh} investiert werden \parencite{BHPT13}. Zu beachten ist, dass die Membranen nach \SIrange{5}{10}{\relax} Jahren ausgetauscht werden müssen. \parencite{Miltner2016} \parencite{KGKK2019} \newline
+
+% Druckwechseladsorption:
+% CH4 Reinheit
+Das Produktgas hat einen \ce{CH4}-Anteil von \SIrange{96}{99}{\percent} \parencite{DSW13} \parencite{KGKK2019}.
+Der Methanverlust im Abgas beträgt zwischen einem und drei Prozent \parencite{KGKK2019} \parencite{dena2019}. 
+Energie muss in erster Linie zum Aufbauen des Betriebsdrucks anwenden. Der nötige Energieaufwand liegt bei etwa \SIrange{0,2}{0,25}{\kWh\normvol} \parencite{Coll17}.
+Die Investitionskosten variieren zwischen \SI{2800}{\sieuro\per\normvolh} Biomethan bei einem Biogasstrom von \SI{600}{\normvolh} und \SI{2000}{\sieuro\per\normvolh} bei \SI{1000}{\normvolh} \parencite{BHPT13}.
+Die Kosten für die Aufbereitung legen bei \SIrange{0,25}{0,31}{\sieuro\per\normvol}.
+Für den Prozess werden keine Chemikalien benötigt. Dennoch ist das System verhältnismäßig komplex.\parencite{AONC2019}
+%\newline
+
+%Kryo: 
+% CH4 Reinheit
+Mithilfe dieser Technologie lassen sich Methanreinheiten von \SIrange{97}{99}{\percent} erzielen.
+% CH4 Schlupf
+Der Methanschlupf beträgt hingegen weniger als \SI{2}{\percent}.
+% Energieaufwand
+Konsistente Angaben zum benötigten Energieaufwand konnten nicht gefunden werden. Die Werte unterscheiden sich zum Teil beträchtlich und liegen zwischen \SIrange{0,18}{1}{\kwh\normvol} \parencite{Emp18} \parencite{KGKK2019}.
+% Investitionskosten
+% Kosten pro Biomethan
+Die Kosten für die Gasaufbereitung liegen etwa bei \SIrange{0,44}{0,55}{\sieuro\per\normvol} {Emp18}. Hier ist anzumerken, dass sich der Preis auf den Prozess mit dem geringeren Energieaufwand bezieht. Unter Umständen liegt der reale Preis je nach Anlagenoptimierung etwas höher. \parencite
+% allgemeine Vor- und Nachteile (Aufwand, Status technische Umsetzung, ökologische Wertung)
+Vorteile des Prozesses sind, dass keine Chemikalien verwendet werden und reines \ce{CO2} als Nebenprodukt entsteht. Trotzdem wird die Technologie nur von wenigen Anlagen genutzt, da ihr System eine Vielzahl von Betriebsmitteln benötigt und energieintensiv ist. \parencite{KGKK2019} \parencite{AONC2019} \newline
+
+
+Hybridanlage: Membran-Kryo 
+%Möglichkeit Hybridverfahren: Beispiel Kryo Membran --> 1 Anlage in Deutschland
+\smallskip
+
+
+In \ref{tab:tab_TechComp} sind die Ergebnisse zusammenfassend dargestellt.
 
 \begin{landscape}
 
 \input{table_upgrade-compare.tex}
 
 \end{landscape}
+
+
+\subsection{Verarbeitung des Kohlenstoffdioxidanteils im Biogas}
+
+Außer den konventionellen Gasaufbereitungstechnologien, die \ce{CO2} abtrennen und in die Atmosphäre leiten, besteht Möglichkeit es weiterzuverwenden. 
+
+% Wer kauft CO2 und für wie viel
+Möglichkeit abgeschiedenes \ce{CO2} zu vermarkten: potenzielle Abnehmer (\ce{CO2} Dünger, Rohstoff für Methanisierungsanlagen/Biokraftstoffe, ...) Ein weiterer Abnehmer für \ce{CO2} sind Methanisierungsanlagen. \newline
+
+
+
+Anstatt das \ce{CO2} zu verkaufen besteht auch die Möglichkeit es zur Methanisierung zu nutzen. Dazu wird, wie in \ref{chap:SoR} dargestellt, Wasserstoff benötigt. Dieser muss entweder eingekauft und gelagert werden oder durch Elektrolyse vor Ort generiert werden.
+% CO2 selbst zur Methanisierung verwenden
+% Sabatier
+Die Kosten für \ce{H2} oder Elektrolyseur
+Etwas zu Reaktormodellen schreiben --> Stromverbrauch Rührwerke
+
+Die Investitionskosten für Elektrolyseure liegen derzeit bei \SIrange{500}{1500}{\Eurkw} für alkalische und \SIrange{800}{1800}{\Eurkw} für PEM-Elektrolyseure. Zusätzlich würden für katalytische Methanisierung \SI{2020}{\relax} zwischen \SIrange{400}{1250}{\Eurkw} anfallen. Für biologische Methanisierung sind Investitionskosten von \SIrange{300}{1250}{\Eurkw}.  \parencite{dena2018b}
+
+
+% biologische Methanisierung Kosten Investition + €/kWh
+Zum Jahr \SI{2017}{\relax} wird für die biologische Methanisierung ein Preis von ungefähr \SIrange{2,5}{6}{\ct\kwh_Methan} veranschlagt. 
+% EINFÜGEN: Preis sowohl für In-situ und Ex-sit -> welches davon teurer und warum
+% Preis pro kWh Hs oder Hi Methan???
+Bei der Berechnung wird ein Strompreis von \SI{5}{\ctkwh} und \SI{3000}{\relax} Volllaststunden angenommen. Der vorangehende Investitionsaufwand wird auf \SIrange{350}{650}{\Eurkw} geschätzt. Nicht berücksichtigt werden dabei allerdings die Kosten für die Elektrolyse. Werden diese einbezogen liegen die Methankosten bei \SIrange{17}{29}{\ctkwh} und die Investitionskosten bei bis zu \SI{3600}{\Eurkw}. Da die Strom- und Investitionskosten für die Elektrolyse so stark ins Gewicht fallen, ist es fragwürdig, ob das Verfahren derzeit wirtschaftlich betrieben werden kann. Ein möglicher Ansatz ist es überschüssigen Strom aus \glspl{FEE} für die Elektrolyse zu verwenden und damit zum einen Regelleistung zu erbringen und zum anderen überschüssige Energie in Form von Methan zu speichern, wie es die Electrochaea in Dänemark bereits tut \parencite{Chaea20}. Je mehr Volllaststunden erreicht werden können, desto wahrscheinlicher ist es, dass sich die Investition lohnt.
+\parencite{4.2b17} \smallskip
+
+
+\subsection{Wirtschaftliche Bewertung/Fazit/Ausblick}
+
+Endbewertung Abschätzung:
+hohe Investitionskosten als Hemmschwelle für Wechsel zu Biomethan
+Technikaufwand überschaubar, da ausgereifte Prozesse genutzt werden können
+-> Nur geeignet für große Anlagen mit hohen Biogasströmen, da Kosteneffizienz stark von Anlagengröße abhängig ist.
+Kosten für Biomethan........................
