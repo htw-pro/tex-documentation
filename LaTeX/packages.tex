@@ -45,7 +45,8 @@
 	fraction-function=\tfrac,
 	range-phrase = {\text{~bis~}},
 	sticky-per = true,											% \per bleibt bestehen für mehr als eine Einheit
-	separate-uncertainty									% Standardabweichung
+	separate-uncertainty,									% Standardabweichung
+	per-mode=symbol
 }
 
 \usepackage[
@@ -74,30 +75,15 @@
 %	},
 %	labelsep=space
 %	]{caption}													% customise captions
+\usepackage{graphics}										% accommodate all needs for inclusion of graphics
 \usepackage{subfigure}									%support for the manipulation and reference of small or ‘sub’ figures and tables within a single figure or table environment
 
 %%%%%%%%% Diagramme
-%\usepackage{tikz,											% Grafik-Paket
-%	stackengine}												% versatile way to stack objects vertically in a variety of customizable ways
+\usepackage{tikz,											% Grafik-Paket
+	stackengine}												% versatile way to stack objects vertically in a variety of customizable ways
 \usepackage{pgfplots}									% Plots
 \pgfplotsset{compat=1.14}								% Soll man wohl machen
-\usetikzlibrary{patterns}									% Patterns anstatt Farben ermöglichen
 
-\usepackage{environ}										% Textwidth von tikzpictures
-\makeatletter
-\newsavebox{\measure@tikzpicture}
-\NewEnviron{scaletikzpicturetowidth}[1]{%
-  \def\tikz@width{#1}%
-  \def\tikzscale{1}\begin{lrbox}{\measure@tikzpicture}%
-  \BODY
-  \end{lrbox}%
-  \pgfmathparse{#1/\wd\measure@tikzpicture}%
-  \edef\tikzscale{\pgfmathresult}%
-  \BODY
-}
-\makeatother
-
-%\input{tikz_macros.tex}
 
 %%%%%%%%% Seitenformatierung
 \usepackage[
@@ -161,6 +147,22 @@
     citecolor={blue!50!black},
     urlcolor={blue!80!black}
 }
+
+\usepackage{environ}										% Textwidth von tikzpictures
+\makeatletter
+\newsavebox{\measure@tikzpicture}
+\NewEnviron{scaletikzpicturetowidth}[1]{%
+  \def\tikz@width{#1}%
+  \def\tikzscale{1}\begin{lrbox}{\measure@tikzpicture}%
+  \BODY
+  \end{lrbox}%
+  \pgfmathparse{#1/\wd\measure@tikzpicture}%
+  \edef\tikzscale{\pgfmathresult}%
+  \BODY
+}
+\makeatother
+
+\input{tikz_macros.tex}
 
 %%%%%%%%% Abkürzungsverzeichnis:
 \usepackage[													% Paket für Glossaries und Acronym-Glossaries

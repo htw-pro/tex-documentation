@@ -1,0 +1,44 @@
+% Schema der Biogasherstellung
+
+\begin{tikzpicture}[
+	node distance=0cm,
+	auto,
+	]
+	% nodes
+	\node[
+		align=center,] (hydro) {Hydrolyse und Acidogenese\\von Biomasse};
+	\node[below=0.5cm of hydro,
+		align=center] (fatty) {Flüchtige Fettsäuren};
+	\node[below=0.4 of fatty] (dummy) {};
+	\node[below=0.1cm of dummy] (dummy2) {};
+	\node[punkt,
+		below left=of fatty,
+		yshift=-0.5cm,
+		align=center] (HCO) {\ce{H2}, \ce{CO2}};
+	\node[below=0.5cm of HCO,
+		align=center] (HydMet) {Hydrogenotrophe\\Methanogenese};
+	\node[punkt,
+		below right=of fatty,
+		yshift=-0.5cm,
+		align=center] (Acetat) {Acetat};
+	\node[below=0.5cm of Acetat,
+		align=center] (AceMet) {Acetoklastische \\Methanogenese};
+	\node[kreis,
+		above left=of HCO,
+		yshift=0.5cm,
+		align=center] (H) {\texttt{+}\ce{H2}};
+	\node[below=2.5cm of fatty,
+		align=center] (CHCO) {\textbf{\ce{CH4} \texttt{+} \ce{CO2}}};
+	% arrows
+	\draw[pil,->] 	(H)	--	(HCO);
+	\draw[pil,->]	(HCO)	--	(CHCO);
+	\draw[pil,->]	(Acetat)	--	(CHCO);
+	\draw[pil,->]	(HCO)	--	(Acetat) node[midway,
+		sloped,
+		above,
+		%rotate=270,
+		] {Homoacetogenese};
+	\draw[pil,->] 	(hydro)	--	(fatty);
+	\draw[pil,-] 	(fatty)	--	(dummy);
+	\draw[pil,->] 	(dummy2)	--	(CHCO);
+\end{tikzpicture}
