@@ -1,23 +1,33 @@
 % schrecklich große Tabelle
 
-{
-\renewcommand{\arraystretch}{1.1}
-\begin{table}[H]
-	\begin{center}
-		\caption{Anforderungen an Gas aus regenerativen Quellen \parencite{FNR14}\parencite{KoBi16}}
-		\begin{tabu} to 0.5\textwidth {| X | X | X | X | X | X | X | X | X |}
+\begin{table}[]
+\begin{center}
+\caption{Übersicht über die konventionellen Biogasaufbereitungsverfahren}
+\begin{tabularx} {\linewidth} {| X | X | X | X | X | X | X |}
 \hline
-Technologie 			& \ce{CH4} Reinheit 				& \ce{CH4} Verlust 		& 
-Energieaufwand 			& Inv. Kosten \si{\sieuro\per\kW} 	& Preis \si{\sieuro\per\normvol} & 
-Vorteile 				& Nachteile 						& Forschungsbedarf		\\		
-\hline
-			\multirow{2}{*}{\ce{CH4}} &	L-Gasnetze: \SI{\geq 90}{\Molpercent}  &	brennbare Gaskomponente	\\
-					 &	H-Gasnetze: \SI{\geq 95}{\Molpercent}	&	{}							\\ 
-\hline
+                                                                                                  & \textbf{DWW} & \textbf{Org. Wäsche} & \textbf{Aminwäsche} & \textbf{Membranv.} & \textbf{PSA} & \textbf{Kryog. V.} \\ \hline
+    
+                                                                                                  
+\textbf{\begin{tabular}[c]{@{}l@{}}CH4 Reinheit\\ in \si{\percent}\end{tabular}}                             
+& 95-99 {\footnotesize \parencite{Coll17}} {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{Struk20}}        & 96-98,5 {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{Struk20}}             & \textgreater{}98 {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{KGKK2019}}    & \textgreater{}80 {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{DSW15}} {\footnotesize\parencite{Miltner2016}}   & 96-99 {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{DSW15}}         & 97-99  {\footnotesize\parencite{Struk20}} {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{AONC2019}}             \\ \hline
 
-			
-		\end{tabu}
-		\label{tab:tab_TechComp}
+\textbf{\begin{tabular}[c]{@{}l@{}}CH4 Verlust\\ in \si{\percent}\end{tabular}}                              
+& 1-3 {\footnotesize\parencite{dena2019}} {\footnotesize\parencite{DSW15}} {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{KGKK2019}}          & 1-4 {\footnotesize\parencite{dena2019}} {\footnotesize\parencite{Emp18}} {\footnotesize\parencite{Struk20}} {\footnotesize\parencite{KGKK2019}}                    & \textless{}0,1 {\footnotesize\parencite{dena2019}} {\footnotesize\parencite{DSW15}} {\footnotesize\parencite{BHPT13}} {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{Coll17}}      & \textless{}20 {\footnotesize\parencite{dena2019}} {\footnotesize\parencite{DSW15}} {\footnotesize\parencite{Miltner2016}} {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{Coll17}}       & \textless{}3 {\footnotesize\parencite{dena2019}} {\footnotesize\parencite{DSW15}} {\footnotesize\parencite{BHPT13}} {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{Coll17}} & \textless{}2 {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{AONC2019}} {\footnotesize\parencite{Struk20}}      \\ \hline
+
+\textbf{\begin{tabular}[c]{@{}l@{}}Energieaufwand\\ in \si{\kwh\per\normvol} \end{tabular}}                    
+& 0,2-0,3 {\footnotesize\parencite{dena2019}} {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{Emp18}} {\footnotesize\parencite{Struk20}}   & 0,23-0,48 {\footnotesize\parencite{dena2019}} {\footnotesize\parencite{Emp18}}           & 0,46-0,97 {\footnotesize\parencite{dena2019}} {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{Emp18}} {\footnotesize\parencite{BHPT13}}           & 0,12-0,35 {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{Emp18}} {\footnotesize\parencite{Miltner2016}}          & 0,15-0,35 {\footnotesize\parencite{dena2019}} {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{Emp18}} {\footnotesize\parencite{BHPT13}}   & 0,18-1 {\footnotesize\parencite{Emp18}} {\footnotesize\parencite{KGKK2019}}            \\ \hline
+
+\textbf{\begin{tabular}[c]{@{}l@{}}Investitionskosten\\ in \si{\sieuro\per\normvolh}\\ für 450 \si{\normvolh}\end{tabular}}  
+& 2500 {\footnotesize\parencite{KGKK2019}}        & 3000-4500 {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{BHPT13}}            & 3300 {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{BHPT13}}                 & 2500-3500 {\footnotesize\parencite{KGKK2019}}          & 2800 {\footnotesize\parencite{BHPT13}}         & 5600 {\footnotesize\parencite{Emp18}}               \\ \hline
+
+\textbf{\begin{tabular}[c]{@{}l@{}}Investitionskosten\\ in \si{\sieuro\per\normvolh}\\ für 1000 \si{\normvolh}\end{tabular}} 
+& 1800  {\footnotesize\parencite{KGKK2019}}       & 2000 {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{BHPT13}}                 & 2300               {\footnotesize\parencite{KGKK2019}} {\footnotesize\parencite{BHPT13}} & 2000 {\footnotesize\parencite{KGKK2019}}             & 2000 {\footnotesize\parencite{BHPT13}}        & k.A.               \\ \hline
+
+\textbf{\begin{tabular}[c]{@{}l@{}}Aufbereitungskosten\\ in \si{\sieuro\per\normvolh}\end{tabular}}               
+& 0,13-0,16 {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{Emp18}}   & 0,09-0,26* {\footnotesize\parencite{FNR14}}           & 0,17-0,35 {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{Emp18}}          & 0,11-0,27 {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{Emp18}} {\footnotesize\parencite{Miltner2016}}         & 0,25-0,31 {\footnotesize\parencite{Coll17}} {\footnotesize\parencite{Emp18}}   & 0,44-0,55  {\footnotesize\parencite{Emp18}}         \\ \hline
+
+\multicolumn{7}{|l|}{*umgerechnet Preis pro kWh Methan}                                                                                                                                                        \\ \hline
+\end{tabularx}
+	\label{tab:tab_TechComp}
 	\end{center}
 \end{table}
-}
