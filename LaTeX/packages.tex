@@ -122,7 +122,8 @@
 %\ofoot*{\today}
 \cfoot{Seite \pagemark}				% Mittleres Foot-Element
 \ohead{ }										% Obere Seitenzahl disablen
-	
+\ihead{ }
+
 %\usepackage{tocloft}
 %\setlength\cftparskip{0pt}
 %\setlength\cftbeforesecskip{0pt}
@@ -163,6 +164,8 @@
 \makeatother
 
 \input{tikz_macros.tex}
+
+\newcommand{\forceindent}{\leavevmode{\parindent=1em\indent}}
 
 %%%%%%%%% Abkürzungsverzeichnis:
 \usepackage[													% Paket für Glossaries und Acronym-Glossaries
